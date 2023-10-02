@@ -1,0 +1,18 @@
+@import '../../App.scss';
+
+.animal {
+  &__img {
+    width: fit-content;
+
+    &--img {
+      min-width: 200px;
+      min-height: 200px;
+    }
+  }
+
+  &__button {
+    &--btn {
+      @include button-style;
+    }
+  }
+}

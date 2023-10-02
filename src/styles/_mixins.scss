@@ -1,0 +1,23 @@
+@mixin button-style {
+  background-color: $light-grey;
+  border-radius: $base__radius;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  font-family: $font__pizelify;
+  font-size: $font-size__m;
+  margin: $indent__base;
+  padding: $indent__s $indent__base;
+}
+
+@mixin flexbox($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin textContainer {
+    background-color: $dark-grey;
+    padding: $indent__base;
+    margin: $indent__base;
+    border-radius: $base__radius;
+}

@@ -1,0 +1,6 @@
+@import '../../App.scss';
+
+.header {
+  @include textContainer;
+  width: fit-content;
+}

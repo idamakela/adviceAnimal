@@ -1,0 +1,6 @@
+@import '../../App.scss';
+
+.advice {
+    @include textContainer;
+    min-width: 300px;
+}
