@@ -1,9 +1,14 @@
-import styles from './advice.module.scss'
+import styles from './advice.module.scss';
 
-const Advice = () => {
+interface AdviceProps {
+  advice: any;
+}
+
+const Advice = ({ advice }: AdviceProps) => {
   return (
     <div className={styles.advice}>
-      <h2>advice</h2>
+      <h2>Pandy says:</h2>
+      {advice ? <p>{advice.advice}</p> : <p>Do you want some advice?</p>}
     </div>
   );
 };

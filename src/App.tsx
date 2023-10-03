@@ -10,16 +10,32 @@ Advice animal
     Pixel and dark-mode design
 */
 
+type AdviceType = {
+  advice: string;
+  id: number;
+};
+
 function App() {
+  const [advice, setAdvice] = useState<AdviceType>(null);
   const API_BASE_URL = 'https://api.adviceslip.com/advice';
+
+  const handleClick = async (): any => {
+    try {
+      const response: any = await fetch(API_BASE_URL);
+      const data: any = await response.json();
+      setAdvice(data.slip);
+    } catch (e) {
+      console.log({ e });
+    }
+  };
 
   return (
     <>
       <Header />
       <main>
         <div className='advice-animal-container'>
-          <Animal />
-          <Advice />
+          <Animal handleClick={handleClick} />
+          <Advice advice={advice} />
         </div>
       </main>
     </>

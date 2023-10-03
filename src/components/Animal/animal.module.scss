@@ -1,8 +1,13 @@
 @import '../../App.scss';
 
 .animal {
+  @include responsive {
+    @include flexbox(column);
+    align-items: center;
+  }
+
   &__img {
-    width: fit-content;
+    width: max-content;
 
     &--img {
       min-width: 200px;

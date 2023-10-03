@@ -32,3 +32,9 @@
   margin: $indent__base;
   border-radius: $base__radius;
 }
+
+@mixin responsive {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }

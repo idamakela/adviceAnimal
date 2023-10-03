@@ -1,6 +1,22 @@
 @import '../../App.scss';
 
 .advice {
-    @include textContainer;
-    min-width: 300px;
+  @include textContainer;
+  max-width: 300px;
+  min-width: 300px;
+
+  @include responsive {
+    min-width: fit-content;
+    max-width: none;
+  }
+
+  h2 {
+    margin-bottom: 4%;
+  }
+
+  p {
+    @include responsive {
+      padding-bottom: 20px;
+    }
+  }
 }
