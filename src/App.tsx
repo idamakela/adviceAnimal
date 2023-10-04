@@ -16,10 +16,10 @@ type AdviceType = {
 };
 
 function App() {
-  const [advice, setAdvice] = useState<AdviceType>(null);
+  const [advice, setAdvice] = useState<AdviceType | null>(null);
   const API_BASE_URL = 'https://api.adviceslip.com/advice';
 
-  const handleClick = async (): any => {
+  const handleClick = async (): Promise<void> => {
     try {
       const response: any = await fetch(API_BASE_URL);
       const data: any = await response.json();

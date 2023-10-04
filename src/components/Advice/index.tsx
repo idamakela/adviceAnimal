@@ -1,7 +1,10 @@
 import styles from './advice.module.scss';
 
 interface AdviceProps {
-  advice: any;
+  advice: {
+    id: number;
+    advice: string;
+  } | null;
 }
 
 const Advice = ({ advice }: AdviceProps) => {
