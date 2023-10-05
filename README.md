@@ -11,7 +11,7 @@ This assignment was part of the Web & App development course.
 
 <img src='./public/adviceAnimal.png' alt='Advice Animal website screenshot' style='height: auto; width: auto' />
 
-[Click here to view the live website.](https://google.com)
+[Click here to view the live website.](https://advice-animal.vercel.app/)
 
 ## Grading
 
