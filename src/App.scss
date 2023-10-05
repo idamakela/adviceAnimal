@@ -6,22 +6,24 @@
   padding: 0;
 }
 
-html {
-  height: 100vh;
+html,
+body {
+  height: 100%;
 }
 
 body {
+  @include flexbox(column);
   font-family: $font__pizelify;
   background-color: $black;
   color: $white;
-  height: 90%;
 
   #root {
-    height: 90%;
+    @include flexbox(column);
+    flex: 1;
 
     main {
       @include flexbox(row);
-      height: 80%;
+      flex: 1;
       align-items: center;
       justify-content: center;
       @include responsive {

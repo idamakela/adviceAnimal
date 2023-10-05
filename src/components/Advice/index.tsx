@@ -1,4 +1,5 @@
 import styles from './advice.module.scss';
+import Loading from '../Loading';
 
 interface AdviceProps {
   advice: {
@@ -12,6 +13,7 @@ const Advice = ({ advice }: AdviceProps) => {
     <div className={styles.advice}>
       <h2>Pandy says:</h2>
       {advice ? <p>{advice.advice}</p> : <p>Do you want some advice?</p>}
+      <Loading />
     </div>
   );
 };
