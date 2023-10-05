@@ -1,12 +1,17 @@
 # React + TypeScript + Vite + SASS
 
-## Assignment: App Two
+## Assignment One: App Two
 
 I made a desktop animal friend that gives you advice. 
 
 When the user clicks the button a call to an API is made, and depending on if the request has been fully processed a loading component is shown which is made using framer-motion. With this small application I had some fun making the button interactive on hover and on active using the corresponding css pseudo-classes. It also includes react components and props to structure the files in a more readable way. 
 
 This assignment was part of the Web & App development course. 
+## Pre-view
+
+<img src='./public/adviceAnimal.png' alt='Advice Animal website screenshot' style='height: 200px; width: 200px' />
+
+[Click here to view the live website.](https://google.com)
 
 ## Grading
 
