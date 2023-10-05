@@ -6,14 +6,20 @@ interface AdviceProps {
     id: number;
     advice: string;
   } | null;
+  loading: boolean;
 }
 
-const Advice = ({ advice }: AdviceProps) => {
+const Advice = ({ advice, loading }: AdviceProps) => {
   return (
     <div className={styles.advice}>
       <h2>Pandy says:</h2>
-      {advice ? <p>{advice.advice}</p> : <p>Do you want some advice?</p>}
-      <Loading />
+      {loading ? (
+        <Loading />
+      ) : !advice ? (
+        <p>Do you want some advice?</p>
+      ) : (
+        <p>{advice.advice}</p>
+      )}
     </div>
   );
 };

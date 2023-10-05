@@ -17,15 +17,19 @@ type AdviceType = {
 
 function App() {
   const [advice, setAdvice] = useState<AdviceType | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
   const API_BASE_URL = 'https://api.adviceslip.com/advice';
 
   const handleClick = async (): Promise<void> => {
     try {
+      setLoading(true);
       const response: any = await fetch(API_BASE_URL);
       const data: any = await response.json();
       setAdvice(data.slip);
+      setLoading(false);
     } catch (e) {
       console.log({ e });
+      setLoading(false);
     }
   };
 
@@ -35,7 +39,7 @@ function App() {
       <main>
         <div className='advice-animal-container'>
           <Animal handleClick={handleClick} />
-          <Advice advice={advice} />
+          <Advice advice={advice} loading={loading} />
         </div>
       </main>
     </>
