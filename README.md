@@ -9,7 +9,7 @@ When the user clicks the button a call to an API is made, and depending on if th
 This assignment was part of the Web & App development course. 
 ## Preview
 
-<img src='./public/adviceAnimal.png' alt='Advice Animal website screenshot' style='height: 500px; width: auto' />
+<img src='./public/adviceAnimal.png' alt='Advice Animal website screenshot' style='height: auto; width: auto' />
 
 [Click here to view the live website.](https://google.com)
 
