@@ -2,7 +2,11 @@
 
 ## Assignment: App Two
 
-I made a ...
+I made a desktop animal friend that gives you advice. 
+
+When the user clicks the button a call to an API is made, and depending on if the request has been fully processed a loading component is shown which is made using framer-motion. With this small application I had some fun making the button interactive on hover and on active using the corresponding css pseudo-classes. It also includes react components and props to structure the files in a more readable way. 
+
+This assignment was part of the Web & App development course. 
 
 ## Grading
 
@@ -22,3 +26,7 @@ VG
 - State is changed
 - Each App uses a different approach to styling
 - Shows an application of the features of the styling library (eg if Tailwind I would expect to see theme extension/ overrides and almost no CSS)
+
+## Feedback from teacher
+
+You are welcomed to write your feedback here Rob! :D 
