@@ -1,0 +1,13 @@
+@import '../../App.scss';
+
+.container {
+  @include flexbox;
+  gap: 5px;
+  padding: $indent__base;
+
+  &__dot {
+    background-color: white;
+    height: 5px;
+    width: 5px;
+  }
+}
