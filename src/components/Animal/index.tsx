@@ -12,12 +12,11 @@ const Animal = ({ handleClick }: AnimalProps) => {
         <img
           className={styles['animal__img--img']}
           src={PantaWave}
-          alt='waving pixelated panda'
+          alt='Waving Panda. Pixel Animal Vectors by Vecteezy'
           height='100'
           width='100'
         />
       </div>
-      {/* <a href="https://www.vecteezy.com/free-vector/pixel-animal">Pixel Animal Vectors by Vecteezy</a> */}
       <div className={styles['animal__button']}>
         <button className={styles['animal__button--btn']} onClick={handleClick}>
           advice me

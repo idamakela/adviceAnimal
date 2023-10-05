@@ -4,12 +4,6 @@ import Header from './components/Header';
 import Animal from './components/Animal';
 import Advice from './components/Advice';
 
-/*
-Advice animal
-    Interact with the desktop animal and get a random advice
-    Pixel and dark-mode design
-*/
-
 type AdviceType = {
   advice: string;
   id: number;
