@@ -6,7 +6,7 @@ I made a desktop animal friend that gives you advice.
 
 When the user clicks the button a call to an API is made, and depending on if the request has been fully processed a loading component is shown which is made using framer-motion. With this small application I had some fun making the button interactive on hover and on active using the corresponding css pseudo-classes. It also includes react components and props to structure the files in a more readable way. 
 
-I also tried unit-testing using Jest for the first time! It was a fun and challenging task to do on my own with a bit of help from google. 
+I also tried unit-testing using Jest for the first time! It was a fun and challenging task to do on my own with a bit of help from google. Another fun thing was implementing a debounce function to prevent spam clicking fetching, because it send a request to the API everytime the button has been clicked (because I didn't like the behaviour it had when checking cache, which is the defualt behaviour) and of course I didn't whant to overload the API. 
 
 This assignment was part of the Web & App development course. 
 ## Preview
